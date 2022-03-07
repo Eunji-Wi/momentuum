@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo&display=swap");
+
 .hidden {
   display: none;
 }
@@ -8,6 +10,7 @@
 }
 
 body {
+  font-family: "Archivo", sans-serif;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -17,7 +20,10 @@ body {
 
 .clock-wrap {
   margin-top: 15%;
-  width: 25%;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #clock {
@@ -46,6 +52,7 @@ body {
   font-size: 3rem;
   color: white;
   text-align: center;
+  width: 100%;
 }
 
 input[type="text"]:focus {
@@ -54,7 +61,6 @@ input[type="text"]:focus {
 
 ::placeholder {
   color: white;
-  width: 100%;
 }
 
 .todo-wrap {
@@ -62,10 +68,12 @@ input[type="text"]:focus {
   right: 2%;
   top: 58%;
   width: 20%;
-  height: 30%;
-  padding: 15px;
+  height: 25%;
+  padding: 10px;
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 5px;
+  overflow: auto;
+  word-wrap: break-word;
 }
 
 #todo-form input[type="text"] {
@@ -75,7 +83,7 @@ input[type="text"]:focus {
   font-size: 1.5rem;
   color: white;
   text-overflow: visible;
-  width: 95%;
+  width: 90%;
   margin-bottom: 5%;
   text-align: center;
 }
@@ -91,11 +99,20 @@ li {
   display: flex;
   align-items: center;
   margin-bottom: 2%;
+  overflow-wrap: break-word;
+}
+
+li span {
+  width: 90%;
 }
 
 button {
-  margin-left: 2%;
+  border: none;
+  background-color: transparent;
+  margin-left: 0.5%;
   cursor: pointer;
+  padding: 2px;
+  font-size: 1rem;
 }
 
 img {

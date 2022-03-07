@@ -14,23 +14,20 @@
         <span>Just a Second...</span><br />
         <span>Downloading Weather for You</span>
       </div>
+
+      <form class="hidden" id="login-form">
+        <input
+          required
+          maxlength="20"
+          type="text"
+          placeholder="What's your name?"
+        />
+      </form>
+      <h1 id="greeting" class="hidden"></h1>
     </div>
-    <form class="hidden" id="login-form">
-      <input
-        required
-        maxlength="15"
-        type="text"
-        placeholder="What is your name?"
-      />
-    </form>
-    <h1 id="greeting" class="hidden"></h1>
     <div class="todo-wrap">
       <form id="todo-form">
-        <input
-          type="text"
-          placeholder="What are you going to do Today?"
-          required
-        />
+        <input type="text" placeholder="What's your plan today?" required />
       </form>
       <ul id="todo-list"></ul>
     </div>
